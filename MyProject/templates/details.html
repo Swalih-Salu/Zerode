@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block body %} 
+
+  
+
+
+  
+
+  <div class=" text-center text-dark mt-5"   >
+    .
+    <div class="hero__text-shadow mt-5">
+      . 
+      <div class="text-white">
+        <div class="text-center">
+          <h1 class="h1 hero__title" style="color: rgb(210, 210, 207);">
+          
+          {{data.name}}
+          
+        </h1>
+        </div><div class="hero__subtitle">
+            <div class="animation-cropper " style="color: rgb(255, 255, 255);">
+             <u>{{data.desc}}</u> 
+            </div>
+          </div>
+      </div>
+      </div>
+        </div>
+
+  <div class="container">
+    <div class="row r1">
+        <div class="col-lg-6 mt-5  dtls-img">
+            <img class="p-3" src="{{data.image.url}}" alt="" srcset="" width='100%'>
+
+        </div>
+        <div class="col-lg-5 mt-5  dtls-txt ">
+            <div>
+                <h1 class="ms-5 text-white dname">{{data.name}}</h1>
+                <div class="mt-2 ms-5 text-white h4">
+                  
+                  <p>{{data.desc}} </p>
+                  <p class="text-success">${{data.price}}</p>
+                  {% if data.stock == 0 %}
+                  <p class="text-danger">Out Of Stock!!</p>
+                  {%else%}
+                  <p class="text-danger">Stock:{{data.stock}}</p>
+                </div>
+                <div class="ms-5" >
+                  <a href="#"> <button type="button" class="btn btn-warning me-5 ">Buy Now</button> </a>
+                  <!-- <button type="button" class="btn btn-outline-dark ">{{data.price}}</button>  -->
+                 <a href="{% url 'cart:cart' data.id %}"> <button type="button" class="btn btn-warning ms-5 ">Add To Cart</button> </a>
+                </div>
+                
+                {% endif %}
+            </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="mt-2 ms-5 text-white h4">
+                <p>{{data.details}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+
+
+  
+{% endblock  %}

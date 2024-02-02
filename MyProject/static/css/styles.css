@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    
+    
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    
+}
+
+.dropdown-toggle::after { 
+    content: none; 
+} 
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:focus .nav-link {
+  border-bottom: 2px solid black;
+}

@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %} 
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner_bike.webp'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-warning">Simple</h1>
+        <p>.maintenance .ownership</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner_spare.webp'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-warning">BETTER</h1>
+        <p>.performance .suspention .stability</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner_upgrade.webp'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-warning">SIMPLE</h1>
+        <p>.swifting .peaceofmind</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="{% static 'images/2nd.webp'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'images/banner_spare.webp'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'images/banner_upgrade.webp'%}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        
+
+
+  <div class=" text-center text-white mt-5 mb-5">
+    <h1 style="font-size: 60px;"><i>BEHIND 
+      THE BIKES </i></h2>
+  
+
+      <div class="container"><h5>.RIDERS .DESIGNERS .INNOVATORS .FRIENDS </h3>
+    <h6>Proudly founded in New Zealand, Zerode has grown out of a devotion to a better riding experience. It is a combination of many years experimenting with bike designs and years aboard them testing, developing and refining - all on the world renowned trails in Rotorua, New Zealand. But at the heart of Zerode, we're a group of riding friends dedicated to making rider better for mountain bikers..... saturated my brain after my first mountain biking experience in the mid 90s. Questions that led me on a journey to make my riding experience better and ultimately deliver a bike that I believe offers the best riding experience available.
+
+      The people that introduced me to Mountain Biking were obsessed with exploring the superb back country trails that NZ has to offer. Evenings were spent pouring over Topo maps to find candidates for the new “best trail ever”. Weekends were spent checking out these candidates. A little bit of racing interrupted our exploration but none of us had the drive or competitive edge that made a great racer. It was quite clear to us that the factory bikes we were riding at the time were a long way from the machines that we really wanted for our adventures. Stage one of creating our ultimate back country/trail bike was hacking up existing bikes, building steel front triangles, increasing suspension travel and trying to match this with long travel forks. Something made a lot easier with the arrival of the Rock Shox BOXXER XC later in the decade.</h4></div>
+  
+    <div class="container mt-4">
+      
+        <div class="row">
+          <div class="col-lg-6">
+          <img src="https://zerodebikes.com/cdn/shop/files/Screenshot_2021-11-15_113413_750x_e2bb9174-361d-421d-a501-75b683898d2b_900x.jpg?v=1673542788" width="100%" alt="">
+            <h1>ROB METZ - FOUNDER</h1>
+            
+            <h6>"Engineering isn't so much a career as a calling for me. Growing up I spent my time designing and building everything from radio control gliders, yachts, and surfboards to telescopes. While studying Mechanical Engineering at the University of Auckland I was introduced to mountain biking, and with a background in BMX it wasn't long before I was representing New Zealand in downhill, exploring our back country, and questioning the latest thinking in mountain bike design."</h6>   
+          </div>
+          <div class="col-lg-6">
+            <img src="https://zerodebikes.com/cdn/shop/files/75534270_10156915598088869_1592523351656497152_n_540x_9a0e0933-8146-4700-90aa-65ec6716935c_900x.jpg?v=1673542208" width="100%" alt="">
+            <h1>ALI QUINN - DIRECTOR</h1>
+            <h6>"After a chance meeting with Rob in the forest in early 2015, and a five minute ride on his Zerode bike, I knew the future of mountain biking. I can still close my eyes and remember that first run - along Under Billy across the road into Sesame Street and down to the shuttle - the bike was silent, it floated and for five minutes I was a faster and smoother rider. The addiction of suddenly being better at something I love doing was real and it was the hardest thing to give Rob back his prototype."</h6> </div>
+        </div>
+    </div>
+  </div>
+    <div >
+      <div class="container mb-4">
+        <div class="row text-white">
+          <div class="col-lg-6">
+            <a href="#">
+              <img src="{% static 'images/2nd.webp'%}" alt="" width="100%">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a href="#">
+              <img src="{% static 'images/2nd1.jpg' %}" width="100%" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 mt-2">
+            
+              <img src="{% static 'images/2nd2.jpg'%}" width="100%" alt="">
+              <p class="h4">Zerode owners around the world are a stoked bunch. Some are weekend warriors, others are absolute pinners. There's one thing that Zerode Riders from around the world have in common - they are keen riders who then became absolute frothers once they experienced the stability of the ride, peace of mind in the back country and hassle free nature of owning a Taniwha, Mulet or Katipo. Check out some of the every day riders from around the world absolutely love our bikes and if you’re a Zerode owner, get in touch and we’ll make you famous here with your bike.</p>
+            
+          </div>
+          <div class="col-lg-6 mt-2">
+            <a href="#">
+              <img src="{% static 'images/2nd3.jpg' %}" width="100%">
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="container justify-content-center mt-5 text-center">
+      <img src='https://zerodebikes.com/cdn/shop/files/PNG_Phil_photoshop_file_200x.png?v=1673311608' alt="">
+    </div>
+
+    <div class="container mt-5">
+      <div class=" row text-white">
+      {% for i in product %}
+      <div class="col-lg-6 mt-5">
+        <div class="row">
+          <div class="col-lg-6"><a href="details/{{i.id}}"><img src="{{i.image.url}}"  alt="..." width="100%"></a></div>
+          <div class="col-lg-6 text-center mt-4">
+            <h3 class="text-warning text-center fw-bolder fst-italic ">{{i.name}}</h3>
+            <h6>{{i.desc}} </h6>
+            <h4 class="text-center fw-bolder fst-italic"><b class="text-success">{{i.price}}$</b> </h4> 
+            <div class="d-flex justify-content-center">
+              <a href="{%  url 'home:details' i.id %}" ><button class="btn btn-outline-danger" role="button">Details</button></a>
+              <!-- <a href="#" class="ms-4 ">
+                
+                <button  role="button"><span class="material-symbols-outlined">
+              heart_plus
+              </span></button></a> -->
+            </div></div>
+        </div>
+        
+        
+      </div>
+      
+            
+      {% endfor %}
+      </div>
+    </div>
+    <div class="container px-3">
+      <hr>
+      {% if product.paginator.num_pages > 1 %}
+      <div class="text-center">
+        {% for i in product.paginator.page_range %}
+        <a href="?page={{i}}" class="btn btn-secondary btn-sm {% if product.number == i %}active {% endif %}">{{i}}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="hero__media-container container mt-5">
+      <iframe id="YouTubeVideo-template--17549789954366__1656989441e80fbdb4" class="video-div" data-type="youtube" data-video-id="oSV3jDZNhgc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Zerode Bikes - The Sound of Silence." width="1280" height="720" src="https://www.youtube.com/embed/oSV3jDZNhgc?autohide=0&amp;cc_load_policy=0&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fzerodebikes.com&amp;widgetid=1" data-gtm-yt-inspected-6="true" tabindex="-1">
+      </iframe>
+    </div>
+
+    {% endblock  %}
