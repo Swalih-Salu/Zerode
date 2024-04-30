@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from ProjectApp.models import Product,Details
-from .models import Cart,Order
+from .models import Cart,Orders
 from django.contrib import messages
 
 # Create your views here.
@@ -79,7 +79,7 @@ def Buy(req):
         if product.stock >= quantity_to_purchase:
             product.stock -= quantity_to_purchase
             product.save()
-            order = Order(quantity=cart_item.quantity, product=cart_item.product, address=selected_address)
+            order = Orders(quantity=cart_item.quantity, product=cart_item.product, address=selected_address)
             order.save()
             Cart.objects.all().delete()
         else:

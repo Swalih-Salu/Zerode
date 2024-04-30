@@ -6,8 +6,8 @@ class Cart(models.Model):
     quantity=models.IntegerField()
     user_id=models.IntegerField()
 
-class Order(models.Model):
+class Orders(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField()
-    address=models.TextField()
+    address=models.TextField(max_length=255, null=False)

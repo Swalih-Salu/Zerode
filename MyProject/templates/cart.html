@@ -5,15 +5,15 @@
 
 
 
-
-<h1 style="color: black;">cart</h1>
+<h1 style="color: black;" class='mt-5'>cart</h1>
+{% comment %} 
 <h1 class="text-white mt-5 text-center mb-5 border-bottom"><i>CART</i>  <span class="ms-2 material-symbols-outlined">
     shopping_cart_checkout
     </span>
  <span class="ms-2 material-symbols-outlined">
     shopping_cart_checkout
-    </span></h1>
-<div class="container ">
+    </span></h1> {% endcomment %}
+<div class="container mt-5 ">
     <div class="row justify-content-center">
         <div class="col-lg-10">
             {% for i in data %}
@@ -120,24 +120,8 @@
 {% endif %}
         
     </div>
-    <!-- <form action="/submit_address" method="post">
-        <div class="container">
-            <div class="row text-white mt-3">
-                <h3>ADDRESS</h3> 
-                {% for i in details %}
-                    <div class="col-lg-4">
-                        <input type="radio" name="selected_address" value="{{ i.address }}">
-                        <h5>House name: {{ i.address }}</h5>
-                        <h5>Pincode: {{ i.pincode }}</h5>
-                        <h5 class="col-lg-6">City: {{ i.city }}</h5>
-                        <h5>Country: {{ i.country }}</h5>
-                        <h5>Phone No: {{ i.phone }}</h5>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-       
-    </form> -->
+    
+    
     
     
 </div>
@@ -160,7 +144,7 @@
                         {% csrf_token %}
                         {% for i in details %}
                             <div class="col-lg-12">
-                                <input type="radio" name="selected_address" value="{{ i.address }}">
+                                <input type="radio" name="selected_address" value="{{ i.address }} - {{i.pincode}} - {{i.city}} -">
                                 <h5>House name: {{ i.address }}</h5>
                                 <h5>Pincode: {{ i.pincode }}</h5>
                                 <h5 class="col-lg-6">City: {{ i.city }}</h5>
